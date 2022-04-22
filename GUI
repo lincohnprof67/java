@@ -1,0 +1,25 @@
+import java.awt.Color;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class GUIWindow {
+    public static void main(String[] args) {
+        JLabel label = new JLabel();// create label
+        label.setText("The big event in Kenya");//set text for frame
+        JFrame frame = new JFrame();//create frame
+        frame.setTitle("Linchtech");//set title
+        frame.setSize(500,500);// set size of frame
+        frame.setResizable(true);// frame can be resized
+        frame.setDefaultCloseOperation(JFrame .EXIT_ON_CLOSE ); //frame is exited when close button is used
+        frame.setVisible(true);//frame is set to visible
+        ImageIcon image = new ImageIcon("egerton.png");// adding an image to the frame
+        frame.setIconImage(image.getImage());
+        frame.getContentPane().setBackground(Color.black);// sets the background color of the frame
+        frame.add(label);
+          new MyFrame();
+    }
+    
+}
